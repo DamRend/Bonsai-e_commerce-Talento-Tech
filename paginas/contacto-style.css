@@ -1,0 +1,392 @@
+/* RESET GENERAL ----------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 120px 5% 60px 5%; /* Aumentamos padding superior para que el header absolute no tape el formulario */
+    background-color: rgb(199, 229, 203);
+}
+
+/* FORMULARIO --------------------------------------------------------------------------------*/
+
+.contiene-formulario{
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(199, 229, 203);
+    padding: 30px;
+    border: transparent;
+    box-shadow: 1px 3px 7px rgba(0,0,0,0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contiene-formulario h3{
+    color: rgb(88, 101, 90);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contiene-formulario p{
+    color: rgb(88, 101, 90);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.formulario-contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.formulario-contacto .campo-formulario,
+.formulario-contacto .mensaje-formulario {
+    width: 100%; 
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario-contacto input{
+    width: 50%;
+    max-width: 400px;
+    padding: 3px 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: rgb(225, 234, 226);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.formulario-contacto textarea{
+    width: 93%;
+    max-height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: rgb(225, 234, 226);
+    outline: none;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: rgb(3, 39, 2);
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px rgba(3, 83, 1, 0.1);
+}    
+
+.formulario-contacto .enviar{
+    background-color: rgb(6, 74, 4);
+    color: white;
+    border: none;
+    padding: 10px 30px; 
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-contacto .enviar:hover{
+    background-color: rgb(88, 101, 90);
+}
+
+.formulario-contacto .enviar:active{
+    transform: scale(0.98);
+}
+
+/* TARJETAS EMPLEADOS ---------------------------------------------------------------------------------*/
+
+.contiene-personas {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;     
+    justify-content: center; 
+    gap: 30px;          
+    width: 100%;
+    max-width: 1200px;   
+    margin: 0 auto;
+}
+
+.contiene-personas .titulo-personas {
+    width: 100%;        
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 30px;
+    color: rgb(3, 39, 2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.persona{
+    background-image: linear-gradient(to bottom, rgb(199, 229, 203),rgba(34, 73, 32, 0.565));
+    border: 2px solid rgb(88, 101, 90);
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    box-shadow: 1px 5px 5px rgba(34, 73, 32, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.persona:hover{
+    box-shadow: 5px 10px 10px rgba(34, 73, 32, 0.8);
+}
+
+.persona .marco-img{
+    width: 250px;
+    height: 400px;
+    clip-path: inset(5% 5% 20% 5%);
+    overflow: hidden;
+}
+
+.persona .marco-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.persona h3{
+    color: rgb(34, 73, 32);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.persona h4{
+    color: rgb(14, 31, 13);
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.persona p{
+    color: rgb(14, 31, 13);
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* MAPA ----------------------------------------------------------------------------*/
+
+.contiene-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.contiene-mapa h3 {
+    color: rgb(3, 39, 2);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.contiene-mapa p {
+    color: rgb(34, 73, 32);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contiene-mapa .mapa {
+    width: 100%;
+    max-width: 800px; 
+    border: 5px solid rgb(3, 39, 2); 
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); 
+    line-height: 0;
+}
+
+.contiene-mapa .mapa iframe {
+    width: 100% !important; 
+    height: 450px; 
+    border: 0;
+}
+
+/* FOOTER (Heredado de main, forzado al 100% de la pantalla de contacto) ----------*/
+.pie-pagina {
+    background-image: linear-gradient(to bottom,rgb(171, 151, 128), rgb(237, 210, 180));
+    padding: 60px 5% 20px 5%;
+    border-top: 5px solid rgb(3, 39, 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%; /* Arreglo definitivo: Ahora sí toma el ancho total de pantalla */
+}
+
+.pie-pagina .columna-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 45%;
+}
+
+.pie-pagina .redes { padding: 6px; }
+.pie-pagina .redes i { font-size: 20px; }
+
+.pie-pagina .pago {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 45%;
+}
+
+.pie-pagina h3 {
+    color: rgb(3, 39, 2);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pie-pagina p {
+    color: #272727;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .pago .img-app {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pie-pagina .pago .img-app img { height: 40px; width: auto; }
+.pie-pagina .pago .img-pay { height: 40px; width: auto; }
+
+.pie-pagina .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #eeeeee;
+    color: #888888;
+    font-size: 14px;
+}
+
+/* ================================================================================= */
+/* MEDIA QUERIES: PÁGINA DE CONTACTO (TABLET Y CELULAR)                             */
+/* ================================================================================= */
+
+/* --- DISPOSITIVOS MEDIANOS (TABLETS - Menor a 992px) --- */
+@media (max-width: 992px) {
+    main {
+        padding: 110px 4% 40px 4%;
+        gap: 60px;
+    }
+
+    .contiene-formulario {
+        max-width: 90%; /* Se ensancha un poco para aprovechar la pantalla */
+    }
+
+    .formulario-contacto input {
+        width: 70%; /* Damos más rango a los inputs en tablets */
+    }
+
+    .persona {
+        width: 45%; /* Se acomodan de a dos por fila de forma equilibrada */
+    }
+}
+
+/* --- DISPOSITIVOS CHICOS (CELULARES - Menor a 768px / 576px) --- */
+@media (max-width: 768px) {
+    .contiene-mapa .mapa iframe {
+        height: 300px; /* Reducción de alto nativa que tenías */
+    }
+    .contiene-mapa h3 {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 100px 15px 30px 15px;
+        gap: 50px;
+    }
+
+    .contiene-formulario {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contiene-formulario h3 { font-size: 24px; }
+    
+    .formulario-contacto input {
+        width: 100%; /* Inputs al 100% en pantallas móviles */
+        max-width: 100%;
+    }
+
+    .formulario-contacto textarea {
+        width: 100%; /* Textarea toma todo el bloque sin desbordar */
+    }
+
+    .contiene-personas .titulo-personas {
+        font-size: 24px;
+    }
+
+    .persona {
+        width: 100%; /* Cada tarjeta de staff ocupa toda la fila hacia abajo */
+        padding: 25px 15px;
+    }
+
+    .persona .marco-img {
+        width: 100%;
+        max-width: 220px;
+        height: 300px; /* Fotos más equilibradas para verticalidad de celulares */
+    }
+
+    .persona h3 { font-size: 26px; }
+    .persona h4 { font-size: 24px; }
+    .persona p { font-size: 18px; }
+
+    .contiene-mapa p { font-size: 16px; }
+
+    /* Footer adaptado a móviles */
+    .pie-pagina {
+        flex-direction: column;
+        padding: 40px 20px 20px 20px;
+        gap: 30px;
+    }
+
+    .pie-pagina .columna-info,
+    .pie-pagina .pago {
+        max-width: 100%;
+    }
+}
