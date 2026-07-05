@@ -372,9 +372,9 @@ html{
 /* --- DISPOSITIVOS CHICOS (CELULARES - Menor a 576px) --- */
 @media (max-width: 576px) {
     /* Ocultamos los links de texto y dejamos visibles los íconos (Hamburguesa y Carrito) */
-    .navbar li:not(.carrito-container):not(.menu-ham) {
+   /*.navbar li:not(.carrito-container):not(.menu-ham) {
         display: none; 
-    }
+    }*/
     
     .navbar {
         padding: 5px 15px;
@@ -429,3 +429,57 @@ html{
         max-width: 100%; /* Ocupan todo el ancho, apilándose hacia abajo */
     }
 }
+
+
+/*CAMBIOS PARA ENTREGHA FINAL--------------------------------------------------------------------------------------------------*/
+
+#bar, .close-container {
+    display: none;
+}
+
+/* Todo lo que tiene que pasar SOLO en pantallas de celular/tablet (menos de 768px) */
+@media (max-width: 768px) {
+    
+    #bar {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: rgb(168, 157, 145);
+    }
+    
+    .close-container {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -300px; /* Se esconde solo en pantallas menores a 768px */
+        width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 80px; /* Espacio para que la cruz no tape los links */
+        border-radius: 0;  /* Sacamos el formato de óvalo en celular */
+        border: none;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+        z-index: 999;
+    }
+
+    .navbar li {
+        padding: 15px 30px; /* Los acomodamos uno abajo del otro con aire */
+        width: 100%;
+    }
+
+    /* 🌟 Corregido: "active" con 'c'. Esta es la clase que mete JS */
+    .navbar.active {
+        right: 0; 
+    }
+} /* 🌟 IMPORTANTE: Esta llave cierra el @media y protege el diseño de PC */

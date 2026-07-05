@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../paginas/tienda-style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="../script.js" defer></script>
+
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="#">
+            <img src="../img/logo1.svg" alt="Logo principal e-commerce">
+        </a>
+        <nav>
+            <ul id="navbar" class="navbar">
+                <li class="close-container">
+                    <a href="#" id="close" class="close">
+                        <i class="far fa-times" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+                <li class="carrito-container">
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="bar" class="menu-ham">
+            <a href="#">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+    <main class="tienda-titulo">
+        <h1>Nuestros mejores productos a un click de distancia</h1>
+        
+        
+        
+    
+    </main>
+    <div class="tienda-fondo">
+        <div id="contenedor-tienda" class="grilla-productos"></div>
+    </div>
+    
+    <div id="carrito-lateral" class="carrito-lateral">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <a href="#" id="carrito-cerrar" class="carrito-cerrar">
+                <i class="far fa-times"></i>
+            </a>
+        </div>
+
+        <div id="carrito-items" class="carrito-items"></div>
+
+        <div class="carrito-total">
+            <div class="factura-contenedor">
+                <h5>Resumen de Compra</h5>
+                <div id="factura-resumen" class="factura-resumen"></div>
+            </div>
+            <hr class="linea-ticket">
+            <h5 class="total-factura">
+                <span>Total a Pagar:</span>
+                <span id="precio-total">$0</span>
+            </h5>
+            <button class="btn-pagar" id="btn-proceder-pago">Proceder al pago</button>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+            <div class="columna-info">
+                <div class="informacion">
+                    <h3>Contacto</h3>
+                
+                <p><strong>Dirección:</strong> Av. Casares 3450, Cdad. Autónoma de Buenos Aires, Argentina</p>
+                <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+                <p><strong>Horario:</strong> Lunes a Viernes 9:00 - 18:00 | Sabado 9:00 14:00 </p>
+                </div>
+                <div class="redes">
+                    <h3>Seguinos</h3>
+                    <a href="#" class="btn-red-social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-red-social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-red-social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>    
+                <div class="pago">
+                    <h3>Descargá tu app</h3>
+                    <p>Desde la Appstore o la Google store</p>
+                    <div class="img-app">
+                    <img src="../img/pay/app.jpg" alt="App Store">
+                    <img src="../img/pay/play.jpg" alt="Google Play">
+                </div>
+                <p>Pagá seguro con</p>
+                <img class="img-pay" src="../img/pay/pay.png" alt="Métodos de Pago">
+                </div>
+
+                <div class="copyright">Damián Ariel Renda | Talento Tech - FrontEnd - E-commerce | ©2026</div>
+
+        </footer>
+        
+</body>
+</html>

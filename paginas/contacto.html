@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../paginas/contacto-style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="../script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="../index.html">
+        <a href="#">
             <img src="../img/logo1.svg" alt="Logo principal e-commerce">
         </a>
         <nav>
             <ul id="navbar" class="navbar">
+                <li class="close-container">
+                    <a href="#" id="close" class="close">
+                        <i class="far fa-times" aria-hidden="true"></i>
+                    </a>
+                </li>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="">Tienda</a></li>
+                <li><a href="../paginas/tienda.html">Tienda</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li class="carrito-container">
                     <a href="paginas/carrito.html">
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="menu-ham">
-                    <a href="">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+
+        <div id="bar" class="menu-ham">
+            <a href="#">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
     </header>
 
     <main>

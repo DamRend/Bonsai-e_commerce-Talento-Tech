@@ -6,6 +6,7 @@
     <title>Proyecto Front-End e-commerce</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="script.js" defer></script>
     
 </head>
 <body>
@@ -15,21 +16,27 @@
         </a>
         <nav>
             <ul id="navbar" class="navbar">
+                <li class="close-container">
+                    <a href="#" id="close" class="close">
+                        <i class="far fa-times" aria-hidden="true"></i>
+                    </a>
+                </li>
                 <li><a href="">Home</a></li>
-                <li><a href="">Tienda</a></li>
+                <li><a href="paginas/tienda.html">Tienda</a></li>
                 <li><a href="paginas/contacto.html">Contacto</a></li>
                 <li class="carrito-container">
                     <a href="paginas/carrito.html">
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="menu-ham">
-                    <a href="">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
         </nav>
+
+        <div id="bar" class="menu-ham">
+            <a href="#">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -40,7 +47,7 @@
                 <h2>Pequeño árbol, gran paz</h2>
                 <h4>¡Bonsáis premium con los mejores precios!</h4>
                 <p>El toque perfecto de naturaleza y serenidad para decorar tu hogar o para regalar paz a alguien más </p>
-                <button>Comprar</button>    
+                <button id="btn-ir-tienda">Comprar</button>    
             </div>
         </section>
 
@@ -57,7 +64,7 @@
                         <h5>Bonsái Jacaranda pequeñas hojas flores violetas</h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -69,7 +76,7 @@
                         <h5>Bonsái Palo borracho corteza espinoza flores rosadas</h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -81,7 +88,7 @@
                         <h5>Bonsái Ceibo árbol nacional Argentino flores rojas</h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -93,7 +100,7 @@
                         <h5>Bonsái Olivo lento crecimiento fructificación ampta para el consumo </h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -105,7 +112,7 @@
                         <h5>Bonsái Palmera cocotera maduracion de fruto inviable </h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -117,7 +124,7 @@
                         <h5>Bonsái Sakura cerezo Japones floracion requiere gran mantenimiento </h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -129,7 +136,7 @@
                         <h5>Bonsái Baobab lento crecimiento alta longevidad </h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
@@ -141,7 +148,7 @@
                         <h5>Bonsái Cactus cardon mexicano lento crecimiento alta longevidad </h5>
                         <h4>$499</h4>
                     </div>
-                    <a href="#" class="carrito">
+                    <a href="paginas/tienda.html" class="carrito">
                         <i class="fal fa-shopping-cart"></i> Comprar
                     </a>
 
